@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.FillUserDataActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/margin_large">
+
+        <androidx.appcompat.widget.AppCompatImageView
+
+            android:id="@+id/btnBackRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHiRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnBackRegister"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:text="Hi !"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_heading_2x"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvFillUserData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHiRegister"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="Create New Account"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:id="@+id/tvUserNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvFillUserData"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:text="Name"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etUserName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUserNameLabel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDateOfBirthLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etUserName"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:text="Date of Birth"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <LinearLayout
+            android:id="@+id/llDateOfBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDateOfBirthLabel"
+            android:layout_marginEnd="@dimen/margin_xlarge"
+            android:weightSum="5">
+
+            <Spinner
+                android:id="@+id/spDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:layout_weight="1"
+                android:elevation="2dp"
+                android:entries="@array/day_selection"
+                android:paddingHorizontal="@dimen/margin_medium_2"
+                android:paddingVertical="@dimen/margin_medium"
+                android:scrollIndicators="bottom" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_medium_2"
+                android:layout_weight="3"
+                android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                android:elevation="2dp"
+                android:entries="@array/month_selection"
+                android:paddingHorizontal="@dimen/margin_medium_2"
+                android:paddingVertical="@dimen/margin_medium" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_medium_2"
+                android:layout_weight="3"
+                android:background="@color/white"
+                android:elevation="2dp">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/year_selection"
+
+                    android:paddingHorizontal="@dimen/margin_medium_2"
+                    android:paddingVertical="@dimen/margin_medium" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvGenderLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llDateOfBirth"
+            android:text="Gender"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvGenderLabel"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Male" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:text="Female" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:text="Other" />
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rgGender"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:text="Password  " />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPassword"
+            android:layout_marginBottom="@dimen/margin_xxlarge" />
+
+        <CheckBox
+            android:id="@+id/cbTermAndService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etPassword"
+            android:text="Agree To" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etPassword"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_card_medium"
+            android:layout_toEndOf="@id/cbTermAndService"
+
+            android:text="Term and Service" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnRegister"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/margin_card_medium_2"
+            android:layout_marginBottom="@dimen/margin_xxlarge"
+            android:layout_weight="1"
+            android:background="@drawable/background_login_button"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold"
+
+            />
+
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

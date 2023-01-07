@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvUserNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:text="Name"
+        android:textSize="@dimen/text_regular_2x" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etUserNameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvUserNameLabel"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginEnd="@dimen/margin_medium_2" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDateOfBirthLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etUserNameEdit"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:text="Date of Birth"
+        android:textSize="@dimen/text_regular_2x" />
+
+    <LinearLayout
+        android:id="@+id/llDateOfBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDateOfBirthLabel"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginBottom="@dimen/margin_medium_2">
+
+        <Spinner
+            android:id="@+id/spDateEdit"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:elevation="2dp"
+            android:entries="@array/day_selection" />
+
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spMonthEdit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:entries="@array/month_selection" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spYearEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/year_selection" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvGenderLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llDateOfBirth"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:text="Gender"
+        android:textSize="@dimen/text_regular_2x" />
+
+    <RadioGroup
+        android:id="@+id/rgGenderEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvGenderLabel"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbMaleEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Male" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbFemaleEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:text="Female" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbOtherEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:text="Other" />
+
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnCancelProfileEdit"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/rgGenderEdit"
+        android:layout_marginStart="@dimen/margin_xxlarge"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginBottom="@dimen/margin_xlarge"
+        android:layout_weight="1"
+        android:background="@drawable/background_signup_button"
+        android:gravity="center"
+        android:text="Cancel"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_regular_2x" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnSaveProfileEdit"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/btnCancelProfileEdit"
+        android:layout_marginStart="@dimen/margin_card_medium_2"
+        android:layout_toEndOf="@id/btnCancelProfileEdit"
+        android:layout_weight="1"
+        android:background="@drawable/background_login_button"
+        android:gravity="center"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_regular_2x"
+        android:textStyle="bold" />
+</RelativeLayout>

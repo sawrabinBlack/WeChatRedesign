@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlChatReceive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_groups"
+        android:paddingStart="@dimen/margin_medium_2"
+        android:paddingEnd="@dimen/margin_medium_2" >
+        <TextView
+            android:id="@+id/tvMessageReceive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi How Are You?"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_regular_3x"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMessageReceive"
+            android:text="10 AM" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlChatSender"
+
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_groups"
+        android:paddingStart="@dimen/margin_medium_2"
+        android:paddingEnd="@dimen/margin_medium_2" >
+        <TextView
+            android:id="@+id/tvMessageSender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi How Are You?"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_regular_3x"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMessageSender"
+            android:text="10 AM" />
+    </RelativeLayout>
+
+
+</FrameLayout>

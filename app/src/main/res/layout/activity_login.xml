@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/margin_medium_2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+
+            android:id="@+id/btnBackLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvWelcomeLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnBackLogin"
+            android:layout_marginStart="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:text="@string/lbl_title_welcome"
+            android:textSize="@dimen/text_heading_2x"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvWelcomeLogin"
+            android:layout_marginStart="@dimen/margin_medium_3"
+
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="Login To Continue"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLoginImage"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/tvLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/login_illustration" />
+
+        <TextView
+            android:id="@+id/tvEnterYourPhoneLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivLoginImage"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:text=" Enter Your Phone Number" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etEnterYourPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvEnterYourPhoneLabel"
+            android:layout_marginEnd="@dimen/margin_xxlarge" />
+
+        <TextView
+
+            android:id="@+id/tvEnterYourPasswordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etEnterYourPhone"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text=" Enter Your Password" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etEnterYourPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvEnterYourPasswordLabel"
+            android:layout_marginEnd="@dimen/margin_large" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvForgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_below="@id/etEnterYourPassword"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:text="Forget Password?" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnLogin"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/margin_card_medium_2"
+            android:layout_marginBottom="@dimen/margin_xxlarge"
+            android:layout_weight="1"
+            android:background="@drawable/background_login_button"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold"
+
+            />
+
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

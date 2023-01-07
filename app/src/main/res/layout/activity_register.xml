@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/margin_medium_2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+
+            android:id="@+id/btnBackRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHiRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnBackRegister"
+            android:layout_marginStart="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:text="Hi !"
+            android:textSize="@dimen/text_heading_2x"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHiRegister"
+            android:layout_marginStart="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="Create New Account"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivRegisterImage"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/tvRegister"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/register" />
+
+
+        <TextView
+            android:id="@+id/tvEnterYourPhoneLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivRegisterImage"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:text=" Enter Your Phone Number" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnGetOTP"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/tvEnterYourPhoneLabel"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/margin_card_medium_2"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            android:layout_marginBottom="@dimen/margin_xxlarge"
+            android:layout_weight="1"
+            android:background="@drawable/background_login_button"
+            android:gravity="center"
+            android:text="Get OTP"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etEnterYourPhoneRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvEnterYourPhoneLabel"
+            android:layout_marginBottom="@dimen/margin_xxlarge"
+            android:layout_toStartOf="@id/btnGetOTP" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:paddingStart="@dimen/margin_medium_3"
+            android:inputType="number"
+            android:id="@+id/etOTP1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etEnterYourPhoneRegister"
+            android:layout_marginStart="80dp"
+            android:background="@color/white"
+            android:elevation="@dimen/margin_medium"
+            android:maxLength="1"
+            android:padding="@dimen/margin_medium" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:paddingStart="@dimen/margin_medium_3"
+            android:inputType="number"
+            android:id="@+id/etOTP2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etEnterYourPhoneRegister"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_toEndOf="@id/etOTP1"
+            android:background="@color/white"
+            android:elevation="@dimen/margin_medium"
+            android:maxLength="1"
+            android:padding="@dimen/margin_medium" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:paddingStart="@dimen/margin_medium_3"
+            android:id="@+id/etOTP3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etEnterYourPhoneRegister"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_toEndOf="@id/etOTP2"
+            android:background="@color/white"
+            android:inputType="number"
+            android:elevation="@dimen/margin_medium"
+            android:maxLength="1"
+            android:padding="@dimen/margin_medium" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:inputType="number"
+            android:id="@+id/etOTP4"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etEnterYourPhoneRegister"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_toEndOf="@id/etOTP3"
+            android:background="@color/white"
+            android:paddingStart="@dimen/margin_medium_3"
+            android:elevation="@dimen/margin_medium"
+            android:maxLength="1"
+            android:padding="@dimen/margin_medium" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDoNotReceiveOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etOTP1"
+            android:layout_marginStart="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:text="Don't Receive the OTP?"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/tvResend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etOTP1"
+            android:layout_marginStart="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:layout_toEndOf="@id/tvDoNotReceiveOTP"
+            android:text="Resend Code"
+            android:textSize="@dimen/text_regular_2x" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:id="@+id/btnVerify"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/tvDoNotReceiveOTP"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/margin_card_medium_2"
+            android:background="@drawable/background_login_button"
+            android:gravity="center"
+            android:text="Verify"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold"
+
+            />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

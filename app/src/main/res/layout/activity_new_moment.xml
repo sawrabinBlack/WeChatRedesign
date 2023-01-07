@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.NewMomentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:src="@drawable/cancel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNewMoment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="New Moment"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_heading_1x"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_card_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium_2"
+            android:background="@drawable/background_login_button"
+            android:paddingStart="@dimen/margin_medium_2"
+            android:paddingTop="@dimen/margin_card_medium"
+            android:paddingEnd="@dimen/margin_medium_2"
+            android:paddingBottom="@dimen/margin_medium"
+            android:text="create"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvProfileNewMoment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNewMoment"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            app:cardCornerRadius="@dimen/margin_xlarge">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivProfilePhotoNewMoment"
+                android:layout_width="@dimen/margin_xxlarge"
+                android:layout_height="@dimen/margin_xxlarge"
+                android:src="@mipmap/profile_demp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvUserNameNewMoment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNewMoment"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_toEndOf="@id/cvProfileNewMoment"
+            android:text="Micheal"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etNewMomentDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvProfileNewMoment"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:backgroundTint="@color/white"
+            android:hint="What is on Your Mind" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/ivVideoNewMoment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_above="@id/btnAddPhoto"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvNewMoment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_medium" />
+
+            <ImageView
+                android:id="@+id/btnAddPhoto"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/rvNewMoment"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_add_24" />
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

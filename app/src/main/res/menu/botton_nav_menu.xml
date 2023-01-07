@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/moments"
+        android:id="@+id/action_moment"
+        android:iconTint="@color/colorAccent"
+        android:title="Moment"
+        app:showAsAction="always">
+
+    </item>
+    <item
+        android:icon="@drawable/chat"
+        android:id="@+id/action_chat"
+        android:title="Chat">
+
+    </item>
+    <item
+        android:icon="@drawable/ic_baseline_perm_contact_calendar_24"
+        android:id="@+id/action_contacts"
+        android:title="Contacts">
+
+    </item>
+    <item
+        android:iconTint="@color/colorAccent"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:id="@+id/action_me"
+        android:title="@string/lbl_me">
+
+    </item>
+
+    <item
+        android:icon="@drawable/menu"
+        android:id="@+id/action_setting"
+        android:title="Setting">
+
+    </item>
+</menu>

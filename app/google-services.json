@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "271327237726",
+    "firebase_url": "https://wechatredesign-51241-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "wechatredesign-51241",
+    "storage_bucket": "wechatredesign-51241.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271327237726:android:7f6d6ca41113b974d406cf",
+        "android_client_info": {
+          "package_name": "com.rabin.wechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271327237726-bsmj4oh1m9r36kvp38iajrn64aqthfhh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCse554hySwycGq6h9LJVgk_yCmvR-Cr8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "271327237726-bsmj4oh1m9r36kvp38iajrn64aqthfhh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
