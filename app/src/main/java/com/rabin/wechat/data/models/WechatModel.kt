@@ -33,4 +33,5 @@ interface WechatModel {
         onSuccess: () -> Unit,
         onFailure: (String) -> Unit
     )
+    fun addContacts(contactId:String,onSuccess: () -> Unit,onFailure: (String) -> Unit)
 }

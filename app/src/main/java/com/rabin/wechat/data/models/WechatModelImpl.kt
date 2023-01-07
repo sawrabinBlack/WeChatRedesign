@@ -102,4 +102,12 @@ object WechatModelImpl : WechatModel {
     ) {
         mApi.createNewMoment(images, description, isVideo, onSuccess, onFailure)
     }
+
+    override fun addContacts(
+        contactId: String,
+        onSuccess: () -> Unit,
+        onFailure: (String) -> Unit
+    ) {
+        mApi.AddContacts(contactId)
+    }
 }
